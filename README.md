@@ -2,7 +2,8 @@
 
 Versão paralela do algoritmo TWDTW (Time-Weighted Dynamic Time Warping) na GPU e CPU.
 
-Para executar o código precisa dos seguintes parâmetros:
+## Parâmetros do código
+O código principal está em src/csv.cpp e para executar o código precisa dos seguintes parâmetros:
 
 - --help ou -h: "Tela de ajuda"
 - --directory ou -d: "Caminho para o diretório com os arquivos usados como entrada de dados das séries temporais e dos padrões".
@@ -11,3 +12,11 @@ Para executar o código precisa dos seguintes parâmetros:
 - --cpu ou -c: "Indica que o benchmark irá ser executado usando os núcleos da CPU".
 - --gpu ou -g: "Indica que o benchmark irá ser executado usando os núcleos da GPU".
 - --test ou -t: "Flag que indica para gerar dados de testes com grandes séries temporais");
+
+## Exemplo de execução no Nsight
+
+Para rodar dentro do Nsight um primeiro exemplo basta mandar executar o projeto com os argumentos abaixo (em "Arguments") na CPU (-c) repetindo 10 vezes (-r 10) com os arquivos de entrada da pasta *files* e do benchmark em *benchmarks/fixed_num_ts_benchmark.csv*
+
+```
+-d "files/" -b "benchmarks/fixed_num_ts_benchmark.csv" -r 10 -c
+```
