@@ -21,4 +21,4 @@ Para rodar dentro do Nsight um primeiro exemplo basta mandar executar o projeto 
 -d "files/" -b "benchmarks/fixed_num_ts_benchmark.csv" -r 10 -c
 ```
 
-**Importante:** configurar as flagas -lboost_date_time -lboost_program_options
+**Importante:** configurar as flags -lboost_date_time -lboost_program_options
